@@ -1,5 +1,5 @@
 # Producer-driven Contract + Consumer-Driven Contract tests Sample - Client application
-Sample application to demonstrate the use of Producer Driven Contract and Consumer Driven Contract tests with SpringBoot 2.3.0 + Spring Cloud Contract 2.2 - Server API Sample.
+Sample application to demonstrate the use of Producer Driven Contract and Consumer Driven Contract tests with SpringBoot 2.3.0 + Spring Cloud Contract 2.2 - Client/contract consumer sample application.
 
 This application uses:
 
@@ -15,7 +15,7 @@ This application uses:
 - StubRunner
 - WireMock
 
-You can see the server API provider application here: https://github.com/bovino/spring_cloud_contract_server_api_sample
+You can see the server / REST API provider application here: https://github.com/bovino/spring_cloud_contract_server_api_sample
 
 # TODO List for this sample project
 
