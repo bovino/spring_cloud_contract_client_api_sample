@@ -57,5 +57,20 @@ test {
 
 	testLogging {
 		exceptionFormat = 'full'
+		outputs.upToDateWhen {false} // check why here: https://stackoverflow.com/a/20359498
+	}
+
+	afterTest { desc, result ->
+		logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+	}
+
+	afterSuite { desc, result ->
+		if (!desc.parent) {
+			println "Results: (${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped)"
+			boolean skipTests = Boolean.parseBoolean(project.findProperty('SKIP_TESTS') ?: "false")
+			if (result.testCount == 0 && !skipTests) { // you REALLY should be using tests.... you know that :-)
+				throw new IllegalStateException("No tests were found. Failing the build")
+			}
+		}
 	}
 }
