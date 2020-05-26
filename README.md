@@ -15,7 +15,19 @@ This application uses:
 - StubRunner
 - WireMock
 
-You can see the server API application here: https://github.com/bovino/spring_cloud_contract_server_api_sample
+You can see the server API provider application here: https://github.com/bovino/spring_cloud_contract_server_api_sample
+
+# TODO List for this sample project
+
+- Adding continuos integration with Jenkins (or similars)
+- Adding code validation with SonarQube (or similars)
+- Adding more contract sample with others DSLs instead of only Groovy (Yaml, Java and Kotlin)
+- Implement a Consumer-driven sample using an Angular application + Pact
+- using a remote StubRunner instead of a local one
+- publishing the contracts to a Git repository instead of using Maven local repo
+- adding a video-tutorial showing all the steps from the beginning, starting with the generation of the codebase from Spring Initializer
+ - Do you have other ideas for improvements? Please tell me! Reach out to me on Linkedin: https://www.linkedin.com/in/bovino/
+
 
 # Getting Started
 This application uses Gradle (Gradle wrapper) and a few useful commands are:
