@@ -10,7 +10,7 @@ This application uses:
 - Lombok
 - Java 8
 - Gradle (Gradle wrapper)
-- JUnit e Mockito
+- JUnit 5 e Mockito
 - Open Feign
 - StubRunner
 - WireMock
@@ -32,8 +32,8 @@ You can see the server API provider application here: https://github.com/bovino/
 # Getting Started
 This application uses Gradle (Gradle wrapper) and a few useful commands are:
 
-- #####Basic Build: <code>gradlew clean build</code>
-- #####Publish (includes generation and publish of contract stubs for your local maven repository): <code>gradlew clean publishToMavenLocal</code>
+- ##### Basic Build: <code>gradlew clean build</code>
+- ##### Publish (includes generation and publish of contract stubs for your local maven repository): <code>gradlew clean publishToMavenLocal</code>
 - ##### Run tests (including the contract tests): <code>gradlew clean test</code>
 
 Before using this application you will need:
