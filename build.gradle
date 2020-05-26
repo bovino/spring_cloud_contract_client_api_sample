@@ -1,6 +1,7 @@
 buildscript {
 	repositories {
 		mavenCentral()
+		mavenLocal()
 	}
 	dependencies {
 		classpath 'org.springframework.cloud:spring-cloud-contract-gradle-plugin:2.2.2.RELEASE'
