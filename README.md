@@ -19,6 +19,7 @@ You can see the server / REST API provider application here: https://github.com/
 
 # TODO List for this sample project
 
+- Adding Docker and maybe Kubernetes support
 - Adding continuos integration with Jenkins (or similars)
 - Adding code validation with SonarQube (or similars)
 - Adding more contract sample with others DSLs instead of only Groovy (Yaml, Java and Kotlin)
